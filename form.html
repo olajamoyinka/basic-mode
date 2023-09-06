@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <title>FORM</title>
+    <style>
+        .main {
+            background-color: whitesmoke;
+            margin: 0 auto;
+            width: 500px;
+            min-height: 400px;
+            border-radius: 4px;
+        }
+        
+        .header {
+            margin-left: 10%;
+            margin-top: 7%;
+            padding-top: 5px;
+        }
+        
+        .register-underline {
+            width: 19%;
+            height: 2px;
+            background-color: red;
+            display: block;
+            position: relative;
+        }
+        
+        .form-row {
+            margin-left: 10%;
+            margin-bottom: 15px;
+        }
+        
+        .form-input {
+            width: 90%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 15px;
+            padding-left: 8px;
+            /* height: 26px; */
+            border: 1px solid rgba(0, 0, 0, .5)
+        }
+        
+        .none {
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .end {
+            margin-left: 12%;
+            margin-top: 40px;
+        }
+        
+        .last {
+            margin-left: 27%;
+            display: inline-flex;
+        }
+        
+        .create-btn {
+            color: white;
+            background-color: red;
+            padding: 2px 6px;
+            height: 28px;
+            border: none;
+            margin-right: 8px;
+        }
+        
+        .log {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h3>Registration
+                <span class="register-underline"></span>
+            </h3>
+        </div>
+        <form action="">
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Confirm Email">
+            </div>
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Fist Name">
+            </div>
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Surname">
+            </div>
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Password">
+
+                <small class="none">
+                            Your Password should have a mixture of numbers, letters (uppercase and lowercase), with a special character.
+                        </small>
+
+            </div>
+            <div class="form-row">
+                <!-- <label>Email:</label> -->
+                <input type="text" class="form-input" placeholder="Confirm Password">
+            </div>
+            <div class="end">
+                <div class="form-row">
+                    <!-- <label>Email:</label> -->
+                    <input type="checkbox" style="margin-right: 8px;" /> <span>I accept the terms & conditions and privacy</span>
+                </div>
+            </div>
+
+            <div class="last">
+                <input type="submit" class="create-btn" value="Create Account">
+                <span>Already have an account?</span>
+                <span class="log">Log in here</span>
+            </div>
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
