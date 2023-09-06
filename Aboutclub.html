@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About club</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class="container my-4">
+        <h4>EPL CLUB</h4>
+        <p>Dear football fan, this is a page meant for knowing more about the EPL clubs this season (2023/2024)</p>
+
+        <label for="select1" class="form-label">Pick a club</label>
+        <div class="row">
+
+            <div class="col-6">
+
+                <select id="selector" class="form-select form-select-lg">
+                    <option value="0">Arsenal</option>
+                    <option value="1">Aston villa</option>
+                    <option>Bournemouth</option>
+                    <option>Brentford</option>
+                    <option>Brighton</option>
+                    <option>Burnley</option>
+                    <option>Chelsea</option>
+                    <option>Crytal palace</option>
+                    <option>Everton</option>
+                    <option>Fulham</option>
+                    <option>Liverpool</option>
+                    <option value="luton_town">Luton town</option>
+                    <option value="2">Manchester city</option>
+                    <option value="3">Manchester united</option>
+                    <option>Newcastle</option>
+                    <option>Nottingham forest</option>
+                    <option>Sheffield united</option>
+                    <option>Tottenham</option>
+                    <option>West ham</option>
+                    <option>Wolves</option>
+                </select>
+
+            </div>
+
+            <div class="col-6">
+
+                <button type="button" onclick="submitprofile()" class="btn btn-lg btn-primary "> Enter </button>
+
+            </div>
+
+            <p>The club you choose is <span id="selection">Selector</span></p>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+<script>
+    let selector = document.getElementById("selector")
+    let selection = document.getElementById("selection")
+
+    let arsenal = {
+        name: 'Arsenal',
+        stadium: 'Emirate',
+        nickname: 'Gunners'
+    };
+
+    let aston = {
+        name: 'Aston Villa',
+        stadium: 'Villa park',
+        nickname: 'villans'
+    };
+
+    let manc = {
+        name: 'Manchester city',
+        stadium: 'Etihad',
+        nickname: 'Citizens'
+    };
+
+    let manu = {
+        name: 'Manchester united',
+        stadium: 'Old Traford',
+        nickname: 'Red Devils'
+    };
+
+    const teams = [arsenal, aston, manc, manu]
+
+    function submitprofile() {
+        var club = selector.value;
+        var detail = teams[club]
+        console.log(detail)
+
+        selection.textContent = (detail.nickname)
+
+    }
+</script>
+
+</html>

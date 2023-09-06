@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Health</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <div class="card my-4">
+
+                    <div class="card-header">
+                        <h4 class="text-success">Health Determinant</h4>
+
+                    </div>
+
+                    <div class="card-body">
+                        <p>This website is created to check your health according to your age and body temperature</p>
+
+                        <label for="Age">Age</label>
+                        <input type="number" id="age" value="0" class="text-success border-success">
+                        <label for="BP">BP</label>
+                        <input type="number" min="15" max="80" value="15" id="bp" class="text-success border-success">
+
+                        <div class=" mx-5  my-3">
+
+                            <button type="button" onclick="submitProfile()" class="btn btn-lg btn-success">Check health status</button>
+
+                        </div>
+
+                        <p><span id="health_status">Your health status</span></p>
+
+
+                    </div>
+
+                    <div class="card-footer">
+                        <h5 class="text-end text-success">HEALTH IS WEALTH</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    const age = document.getElementById("age")
+    const bp = document.getElementById("bp")
+
+    var health = document.getElementById("health_status")
+    var result = "";
+
+
+    function submitProfile() {
+        var x = age.value;
+        var y = bp.value;
+
+        if ((x <= 15) && (y >= 15 && y <= 25)) {
+            result = "Treat kid immediately as body temperature is low"
+        } else if (x <= 15 && (y >= 26 && y <= 35)) {
+            result = "Kid, You are healthy"
+        } else if (x <= 15 && y > 35) {
+            result = "Treat kid immediately as body temperature is high"
+        } else if ((x >= 16 && x <= 50) && (y >= 15 && y <= 30)) {
+            result = "Treat the youth immediately as body temperature is low"
+        } else if ((x >= 16 && x <= 50) && (y >= 31 && y <= 44)) {
+            result = "Youth, Your body is okay"
+        } else if ((x >= 16 && x <= 50) && y > 44) {
+            result = "Treat youth immediately as body temperature is high"
+        } else if (x > 50 && (y >= 20 && y <= 35)) {
+            result = "Treat adult immediately as body temperature is low"
+        } else if (x > 50 && (y >= 36 && y <= 48)) {
+            result = "Adult,You are old and strong"
+        } else if (x > 50 && y > 49) {
+            result = "Treat adult immediately as body temperature is high"
+        } else {
+            result = "Your health is Very critical"
+        }
+
+        health.textContent = (result)
+
+
+    }
+</script>
+
+</html>

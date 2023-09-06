@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actions</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+</head>
+<!-- start body -->
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+                <h3>Client information collection center</h3>
+
+                <div class="form">
+                    <div class="form-group my-2">
+
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-lg" id="client_name" placeholder="Put your name here">
+
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control form-control-lg" id="client_age" placeholder="Put your real age here">
+
+                        <label for="phone-number" class="form-label">Phone number</label>
+                        <input type="tel" class="form-control form-control-lg" id="phone_number" placeholder="Put your number here" value="+234">
+
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" onclick="submitprofile()" class="btn btn-lg btn-primary">Submit</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-6">
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <h4>Your information</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>Hello user </p>
+                        <p>Your name is <span id="user_client_name">User</span></p>
+                        <p>You are <span id="user_client_age">--</span> years old</p>
+                        <p>Your phone number is <span id="user_phone_number">+234</span></p>
+                        <p>you can now <a href="" target="blank" style="text-decoration: none;">proceed</a> to register for our scholarship, your full details will be needed</p>
+                    </div>
+
+                    <div class="card-footer">
+                        <p>Congratulations</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+<!-- end body -->
+<script>
+    // form value
+    var client_name = document.getElementById("client_name");
+    var client_age = document.getElementById("client_age");
+    var phone_number = document.getElementById("phone_number");
+
+    // text value
+    var user_client_name = document.getElementById("user_client_name")
+    var user_client_age = document.getElementById("user_client_age")
+    var user_phone_number = document.getElementById("user_phone_number")
+
+    function submitprofile() {
+        console.log(
+            client_name.value,
+            client_age.value,
+            phone_number.value,
+        );
+        user_client_name.textContent = (client_name.value)
+        user_client_age.textContent = (client_age.value)
+        user_phone_number.textContent = (phone_number.value)
+    }
+</script>
+
+</html>

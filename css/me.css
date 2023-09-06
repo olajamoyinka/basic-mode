@@ -1,0 +1,30 @@
+body{background: teal;}
+header{color: rgba(255, 0, 0, 0.774);
+   text-align: center;
+   text-decoration: capitalize;
+   font-size: 3rem;
+   font-weight: bold;
+}
+p{text-align: center;
+font-size: 2.5rem;
+color: rgba(255, 0, 0, 0.479);
+}
+h1{text-align: center;
+color: rgba(255, 0, 0, 0.267);
+font-size: 2rem;
+}
+ul{text-decoration: none;
+}
+li{font-size: 3rem;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+a{ text-decoration: none;
+    color: rgba(255, 0, 0, 0.24);
+
+}
+a:hover{font-size: 3.5rem;
+color: rgba(255, 0, 0, 0.904);
+}

@@ -1,0 +1,55 @@
+body{
+    background-image: url("file:///C:/Users/JayMighty/Downloads/pexels-eugene-golovesov-14098062.jpg");
+    background-color: rgba(255, 0, 212, 0.747);
+    background-size: cover;
+    background-position: center;
+
+
+}
+h1{
+    text-align: center;
+    color: rgba(199, 13, 13, 0.808);
+}
+span{
+    color: rgba(29, 79, 230, 0.829);
+}
+h2{
+    text-align: center;
+    color: rgba(167, 11, 11, 0.678);
+}
+h3{
+    text-align: center;
+    color: rgba(167, 11, 11, 0.678);
+}
+.market{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.buy{font: bold;
+    font-size: 2.5rem;
+    margin-right: 150px;
+    
+}
+.sell{font: bold;
+    font-size: 2.5rem;
+   
+    
+}
+a{
+    text-decoration: none;
+    color: rgba(136, 7, 7, 0.719)
+}
+a:hover{font-size: 3rem;
+    color: rgba(196, 21, 21, 0.966)
+}
+
+.sell a{text-decoration: none;
+    color:rgba(32, 78, 216, 0.829)
+}
+
+.sell a:hover{
+    color: rgba(10, 67, 240, 0.897)
+}
+

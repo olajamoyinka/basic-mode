@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Age determinant</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <div class="card my-5">
+
+                    <div class="card-header">
+
+                        <h4>LIFE STAGE</h4>
+
+                    </div>
+
+                    <div class="card-body">
+                        <p>Determine your live stage according to your age</p>
+
+                        <input type="number" min="0" max="120" placeholder="Put your age here" value="0" id="age">
+
+                        <div class="my-3">
+
+                            <button type="button" onclick="submitProfile()" class="btn btn-lg btn-success">Enter</button>
+
+                        </div>
+
+                        <p>According to your age, you are a/an <span id="user_age"></span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+<script>
+    var determinant = document.getElementById("age")
+    var age_range = document.getElementById("user_age")
+
+    var result = "";
+
+    function submitProfile() {
+        var age = determinant.value
+
+        if (age <= 1) {
+            result = "Infant"
+        } else if (age > 1 && age <= 2) {
+            result = "Toddler"
+        } else if (age > 2 && age <= 11) {
+            result = "Kid"
+        } else if (age > 11 && age <= 18) {
+            result = "Teenager"
+        } else if (age > 18 && age <= 23) {
+            result = "Young Adult"
+        } else if (age > 23 && age <= 60) {
+            result = "Youth"
+        } else if (age > 60 && age <= 80) {
+            result = "Adult"
+        } else if (age > 80 && age <= 100) {
+            result = "Old Age"
+        } else if (age > 100 && age <= 120) {
+            result = "Very Old"
+        } else {
+            result = "Undefined"
+        }
+
+        console.log(result)
+        age_range.textContent = (result)
+
+    }
+</script>
+
+
+
+</html>

@@ -1,0 +1,18 @@
+
+           .background{
+            background-image: url('C:/Users/YUSLUV/Downloads/pexels-vlada-karpovich-4050315.jpg');
+            background-position: auto;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .blinkist{margin-left: 200px; margin-top: 20px;}
+        .blink{font-family: sans-serif; font-weight: bold;}
+        .log{margin-left: 950px; font-weight: lighter;}
+        .fit{margin-top: 30px; margin-bottom: 20px}
+        h3{text-align: center; font-family: sans-serif;color: purple; font-size: 60px}
+        .key{ font-size: 25px; width: 26%; text-align: center; margin: 0 auto;}
+        .start{text-align: center; margin-top: 20px}
+         .start-btn{background: indigo; color: white; height: 50px; width: 15%;border: purple; border-radius: 4px; text-align: center}
+         h5{font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; margin-left: 850px}
+         .watch{display: inline-flex; margin-top: 20px; }
+         .video{text-decoration: underline; margin-left: 10px;}

@@ -1,0 +1,30 @@
+body{background:  aqua;
+    width: 80%;
+    text-align: center
+}
+h1{
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+.section-top{
+    display: flex;
+    margin-bottom: 100px;
+}
+.section-bottom{
+    display: flex;
+}
+.section-B{
+    margin-left: 100px;
+    border: 3px orange, solid;
+    height: 300px;
+    width: 300px;
+
+}
+.section-A{
+    border: 3px orange, solid;
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+}
+li{list-style-type: none}

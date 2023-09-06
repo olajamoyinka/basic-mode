@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <input type="text" id="result">
+    <table>
+        <tr>
+            <td><button onclick="buttonPressed('1')">1</button></td>
+            <td><button onclick="buttonPressed('2')">2</button></td>
+            <td><button onclick="buttonPressed('3')">3</button></td>
+            <td><button onclick="buttonPressed('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonPressed('4')">4</button></td>
+            <td><button onclick="buttonPressed('5')">5</button></td>
+            <td><button onclick="buttonPressed('6')">6</button></td>
+            <td><button onclick="buttonPressed('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonPressed('7')">7</button></td>
+            <td><button onclick="buttonPressed('8')">8</button></td>
+            <td><button onclick="buttonPressed('9')">9</button></td>
+            <td><button onclick="buttonPressed('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonPressed('0')">0</button></td>
+            <td><button onclick="buttonPressed('.')">.</button></td>
+            <td><button onclick="buttonPressed('C')">C</button></td>
+            <td><button onclick="buttonPressed('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonPressed('(')">(</button></td>
+            <td><button onclick="buttonPressed(')')">)</button></td>
+            <td><button onclick="buttonPressed('%')">%</button></td>
+            <td><button onclick="calculate()">=</button></td>
+        </tr>
+    </table>
+    <script>
+        var calculatorValue = document.getElementById('result');
+
+        function buttonPressed(value) {
+            calculatorValue.value = calculatorValue.value + value;
+        }
+
+        function calculate() {
+            let result = calculatorValue.value;
+            let answer = eval(result);
+            calculatorValue.value = answer;
+        }
+    </script>
+</body>
+
+</html>

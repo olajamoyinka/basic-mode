@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <div class="card my-4">
+
+
+                    <p>A limited and specific calculator</p>
+
+
+                    <input type="number" placeholder="Put your number here" class="form-control" id="input">
+
+                    <div class="buttons my-3 ms-3">
+                        <button onclick="squareFunction()" class="btn btn-lg btn-primary">Square</button>
+                        <button onclick="cubeFunction()" class="btn btn-lg btn-primary">Cube</button>
+                        <button onclick="quadrantFunction()" class="btn btn-lg btn-primary">Quadrant</button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    var calculatorInput = document.getElementById("input")
+
+    function squareFunction() {
+        var number = calculatorInput.value;
+        var Square = number * number
+
+        console.log(number, Square);
+        calculatorInput.value = Square
+    }
+
+    function cubeFunction() {
+        var number = calculatorInput.value
+        var Cube = number * number * number
+
+        console.log(number, Cube)
+        calculatorInput.value = Cube
+
+    }
+
+    function quadrantFunction() {
+        var number = calculatorInput.value
+        var Quadrant = number * number * number * number
+
+        console.log(number, Quadrant)
+        calculatorInput.value = Quadrant
+
+    }
+</script>
+
+</html>

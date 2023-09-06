@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>manchester-united</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+
+
+                <h4>Information collector</h4>
+
+                <form>
+                    <div class="form-group my-2">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="full_name" name="fullname" type="text" class="form-control bg-danger" placeholder="Fullname">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="age" class="form-label">Age</label>
+                        <input id="age" type="number" class="form-control" placeholder="years old">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="number" class="form-label">Phone Number</label>
+                        <input id="phone" type="tel" class="phone  form-control bg-danger" value="+" placeholder="+234">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" onclick="submitProfile()" class="btn btn-danger btn-lg my-3">Submit</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Welcome</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Hello <span id="user_full_name"></span> </p>
+                        <p>You are <span id="user_age"></span> years old</p>
+                        <p>Your phone number is <span id="phone_number"></span></p>
+                        <p>You can now proceed in registering for our scholarship</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <p>Congratulation</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // Form Value
+    var username = document.querySelector("#full_name");
+    var age = document.getElementById("age");
+    var phone = document.getElementById("phone");
+    // Text Value
+    var userfull_name = document.querySelector("#user_full_name")
+    var userage = document.querySelector("#user_age");
+    var userphone = document.getElementById("phone_number")
+
+    function submitProfile() {
+        console.log(
+            username.value,
+            age.value, parseInt(age.value),
+            phone.value
+        );
+        userage.textContent = (age.value)
+        userfull_name.textContent = username.value
+        userphone.textContent = phone.value
+            // userage.style.color = "yellow"
+    }
+</script>
+
+
+
+</html>

@@ -1,0 +1,135 @@
+.header {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search {
+    width: 40%;
+    margin-right: 15px;
+    margin-top: -15px;
+}
+
+.container-find {
+    margin-right: 30px;
+    color: black;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: rgba(253, 248, 233, 255);
+}
+
+.container-guest {
+    color: black;
+    padding-left: 5px;
+    background-color: rgba(243, 244, 246, 255);
+    width: 180px;
+    height: 50px;
+    display: inline-flex
+}
+
+span {}
+
+.section-A a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    margin-left: 30px
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    font-size: 15px;
+}
+
+li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.nav-b {
+    margin-top: 80px;
+}
+
+.nav-b li {
+    margin-left: 20px;
+}
+
+.word-burger {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 50px;
+    color: white;
+}
+
+.buttery {
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 50px;
+}
+
+.irish {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.view {
+    background-color: white;
+    border: solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.view a {
+    color: orangered;
+    text-decoration: none;
+    padding: 3px 25px;
+}
+
+.card-body {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgba(207, 228, 211, 255);
+}
+
+.card-body a {
+    color: black;
+    text-decoration: none;
+}
+
+.down {
+    margin-left: 5%;
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    background-color: rgba(207, 228, 211, 255);
+    width: 90%;
+    background-image: url('http://127.0.0.1:5500/images/shoprite_burger.jpeg');
+    height: 200px;
+}
+
+.down .day {
+    color: white;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+    // Number 1
+    let teams = ["Arsenal", "Aston Villa", "Al-Nasr", "Burnley", "Brighton", "Bournemouth", "Barcelona", "Chelsea", "Crystal Palace", "Chesterfield", "Everton", "Fulham", "Liverpool", "Luton Town", "Manchester city", "Manchester United", "Newcastle", "Nottingham Forest", "Real Madrid", "Sheffield", "Sunderland", "Stoke city", "Tottenham", "West ham", "West brom", "Wolves"];
+    letter = "B"
+    for (
+        let i = 0; i < teams.length; i++
+    ) {
+        let team = teams[i];
+
+        let teamBegin = team.charAt(0);
+        // console.log(teamBegin)
+        if (teamBegin == letter) {
+            console.log(team)
+        }
+
+    }
+
+    console.log(teams[teams.length - 1])
+
+
+
+    // Number 2
+
+    let fruit = ["Apple", "Banana", "Pine Apple", "Water Lemon", "Orange", "Lemon", "Date", "Grape", "Cashew", "Pear"]
+    let vegetable = ["Carrot", "Strawberry", "Cucumber"]
+    fruit.push(...vegetable)
+    console.log(fruit[fruit.length - 1])
+
+    console.log(fruit.length)
+</script>
+
+</html>

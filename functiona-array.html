@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functional Array</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="col-6">
+
+            <div class="card my-4">
+
+                <div class="card-header">
+                    <h4 class="text-success">FOOTBALL CLUBS</h4>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p>Listing out all the clubs that starts with your chosen first letter</p>
+
+                    <input type="name" id="club" placeholder="write a letter" class="border-success my-3">
+                    <button type="button" onclick="submitProfile()" class="btn btn-lg btn-success my-3">Check health status</button>
+
+                    <p>The clubs are <span id="clubs"></span></p>
+
+                </div>
+
+                <div class="card-footer">
+                    <h4 class="text-success text-end">Football is life</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    var clubs = document.getElementById("clubs")
+
+
+    let teams = ["Arsenal", "Aston Villa", "Al-Nasr", "Burnley ", "Brighton ", "Bournemouth", "Barcelona", "Chelsea", "Crystal Palace", "Chesterfield", "Everton", "Fulham", "Liverpool", "Luton Town", "Manchester city", "Manchester United", "Newcastle", "Nottingham Forest", "Real Madrid", "Sheffield", "Sunderland", "Stoke city", "Tottenham", "West ham", "West brom", "Wolves"];
+    let related = [];
+
+    function submitProfile() {
+        related = [];
+
+        var club = document.getElementById("club").value
+            // let letter = "B"
+        for (
+            let i = 0; i < teams.length; i++
+        ) {
+            let team = teams[i];
+
+            let teamBegin = team.charAt(0);
+            if (teamBegin == club.toUpperCase()) {
+                related.push(team)
+            }
+
+        }
+        clubs.textContent = related
+        console.log(related)
+    }
+</script>
+
+</html>
